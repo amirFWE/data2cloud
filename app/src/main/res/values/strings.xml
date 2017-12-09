@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">data2cloud</string>
+    <string name="long_promp">select Longitude</string>
+    <string name="lat_promp">select Latitude</string>
+
+    <string-array name="long_arrays">
+        <item>50.2153</item>
+        <item>110.2845</item>
+        <item>175.1580</item>
+        <item>165.6512</item>
+        <item>100.3202</item>
+        <item>121.3213</item>
+        <item>102.3012</item>
+        <item>102.1111</item>
+    </string-array>
+
+    <string-array name="lat_arrays">
+        <item>50.2153</item>
+        <item>110.2845</item>
+        <item>175.1580</item>
+        <item>165.6512</item>
+        <item>100.3202</item>
+        <item>121.3213</item>
+        <item>102.3012</item>
+        <item>102.1111</item>
+    </string-array>
+</resources>
