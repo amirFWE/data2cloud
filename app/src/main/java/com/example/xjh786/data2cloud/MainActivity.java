@@ -5,8 +5,6 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.icu.text.SimpleDateFormat;
-import android.icu.util.Calendar;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,6 +19,9 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static android.content.ContentValues.TAG;
 
@@ -130,8 +131,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 
     }
     private String currentTimeStr() {
-        Calendar c = Calendar.getInstance();
-        SimpleDateFormat df = new SimpleDateFormat("HH:mm:ss");
-        return df.format(c.getTime());
+        String currentDateTimeString = new SimpleDateFormat("HH:mm:ss").format(new Date());
+        return currentDateTimeString;
     }
 }
