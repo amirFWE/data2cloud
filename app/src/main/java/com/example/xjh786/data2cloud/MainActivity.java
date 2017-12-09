@@ -52,9 +52,9 @@ public class MainActivity extends Activity implements SensorEventListener {
 
 
         Spinner longSP = ((findViewById(R.id.longDD)));
-        LongT = longSP.toString();
+        LongT = longSP.getSelectedItem().toString();
         Spinner latSP =(findViewById(R.id.latDD));
-        LatT=latSP.toString();
+        LatT=latSP.getSelectedItem().toString();
 
         int seekBarValue = HBSB.getProgress();
         HearB = String.valueOf(seekBarValue);
